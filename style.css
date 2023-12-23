@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* style for the background */
+.container {
+    max-width: 1440px;
+    min-height: 100svh;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* style for the card overall */
+.card {
+    display: block;
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+}
+
+/* style for the content container in general */
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: .3em .3em 0 0;
+    padding: 2.3em;
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+    padding: 2.3em;
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 .3em .3em;
+    padding: 2.3em;
+}
+
+/* style for the contents*/
+.img-container {
+    margin-bottom: 1.5em;
+}
+
+.head-text {
+    margin-bottom: 2em;
+}
+
+.head-text h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+}
+
+.para {
+    margin-bottom: 2em;
+    padding-right: 2em;
+}
+
+.para p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.4;
+}
+
+.one {
+    color: hsl(31, 77%, 52%);
+}
+
+.two {
+    color: hsl(184, 100%, 22%);
+}
+
+.three {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn button {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375rem;
+    padding: .9em 2em;
+    border-radius: 2.5em;
+    border: none;
+}
+
+@media (min-width: 1000px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 75%;
+        max-width: 870px;
+    }
+
+    .sedan {
+        border-radius: .3em 0 0 .3em;
+    }
+
+    .luxury {
+        border-radius: 0 .3em .3em 0 ;
+    }
+
+    .para {
+        margin-bottom: 4em;
+    }
+}
